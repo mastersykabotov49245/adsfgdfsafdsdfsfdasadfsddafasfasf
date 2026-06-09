@@ -1,0 +1,64 @@
+2026-06-09 22:54:02,520 - __main__ - INFO - 🤖 NFT Gift Bot запущен!
+2026-06-09 22:54:08,049 - handlers.menu_commands - ERROR - ❌ Ошибка установки команды: Timed out
+2026-06-09 22:54:08,791 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getMe "HTTP/1.1 200 OK"
+2026-06-09 22:54:09,186 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/deleteWebhook "HTTP/1.1 200 OK"
+2026-06-09 22:54:09,186 - apscheduler.scheduler - INFO - Scheduler started
+2026-06-09 22:54:09,186 - telegram.ext.Application - INFO - Application started
+2026-06-09 22:54:11,486 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:54:11,758 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getChatMember "HTTP/1.1 400 Bad Request"
+2026-06-09 22:54:11,758 - utils - ERROR - Ошибка проверки подписки для 47766426: Chat not found
+2026-06-09 22:54:12,050 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/sendMessage "HTTP/1.1 200 OK"
+2026-06-09 22:54:22,026 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:54:32,719 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:54:42,817 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:54:44,657 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:54:48,662 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:54:49,165 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-09 22:54:49,165 - __main__ - INFO - 🔄 CALLBACK: Пользователь 47766426, callback_data: check_subscription
+2026-06-09 22:54:49,434 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getChatMember "HTTP/1.1 200 OK"
+2026-06-09 22:54:49,696 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-09 22:54:49,696 - __main__ - ERROR - ❌ Ошибка в обработчике callback: InlineKeyboardButton.__init__() got an unexpected keyword argument 'icon_custom_emoji_id'
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\kotakbas_nevazhno-main\run.py", line 154, in handle_callback
+    await StartHandler.show_main_menu(update, context)
+  File "C:\Users\user\Desktop\kotakbas_nevazhno-main\handlers\start.py", line 30, in show_main_menu
+    InlineKeyboardButton(
+TypeError: InlineKeyboardButton.__init__() got an unexpected keyword argument 'icon_custom_emoji_id'
+2026-06-09 22:54:49,956 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/answerCallbackQuery "HTTP/1.1 200 OK"
+2026-06-09 22:54:52,386 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:54:52,656 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getChatMember "HTTP/1.1 200 OK"
+2026-06-09 22:54:52,656 - __main__ - ERROR - Exception while handling an update: InlineKeyboardButton.__init__() got an unexpected keyword argument 'icon_custom_emoji_id'
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\Desktop\kotakbas_nevazhno-main\handlers\start.py", line 22, in start_command
+    await StartHandler.show_main_menu(update, context)
+  File "C:\Users\user\Desktop\kotakbas_nevazhno-main\handlers\start.py", line 30, in show_main_menu
+    InlineKeyboardButton(
+TypeError: InlineKeyboardButton.__init__() got an unexpected keyword argument 'icon_custom_emoji_id'
+2026-06-09 22:54:52,961 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/sendMessage "HTTP/1.1 200 OK"
+2026-06-09 22:54:55,960 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:54:56,222 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getChatMember "HTTP/1.1 200 OK"
+2026-06-09 22:54:56,222 - __main__ - ERROR - Exception while handling an update: InlineKeyboardButton.__init__() got an unexpected keyword argument 'icon_custom_emoji_id'
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "C:\Users\user\AppData\Local\Programs\Python\Python310\lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+  File "C:\Users\user\Desktop\kotakbas_nevazhno-main\handlers\start.py", line 22, in start_command
+    await StartHandler.show_main_menu(update, context)
+  File "C:\Users\user\Desktop\kotakbas_nevazhno-main\handlers\start.py", line 30, in show_main_menu
+    InlineKeyboardButton(
+TypeError: InlineKeyboardButton.__init__() got an unexpected keyword argument 'icon_custom_emoji_id'
+2026-06-09 22:54:56,505 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/sendMessage "HTTP/1.1 200 OK"
+2026-06-09 22:55:06,059 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:55:16,159 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:55:26,249 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:55:36,341 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:55:46,436 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:55:51,240 - httpx - INFO - HTTP Request: POST https://api.telegram.org/bot8634648515:AAGhffesBb4QS3HdwdWizq3Rg4sMdBVNZUo/getUpdates "HTTP/1.1 200 OK"
+2026-06-09 22:55:51,240 - telegram.ext.Application - INFO - Application is stopping. This might take a moment.
+2026-06-09 22:55:51,240 - apscheduler.scheduler - INFO - Scheduler has been shut down
+2026-06-09 22:55:51,240 - telegram.ext.Application - INFO - Application.stop() complete

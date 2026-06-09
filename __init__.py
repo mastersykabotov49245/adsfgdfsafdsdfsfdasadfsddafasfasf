@@ -1,0 +1,1 @@
+name = "nft_parser_bot"
